@@ -4,17 +4,24 @@ import ReactDOM from "react-dom"
 /**
 Challenge: 
 
-- Move the `footer` into its own component called "Footer" 
-  and render that component inside the Page component.
-- Move the `h1` and `ol` together into another component
-  called "MainContent" and render inside Page as well.
+- Add an `ul` inside the Header's `nav` and create
+  the following `li`s: "Pricing", "About", & "Contact"
+- Using flexbox, line up the nav items horizontally, and
+  put them inline with the React logo.
+- Change the image styling to happen in CSS instead of in-line
+  For practice, add a new class to the image in order to style it
 */
 
 function Header() {
     return (
         <header>
-            <nav>
-                <img src="./react-logo.png" width="40px" />
+            <nav className="nav">
+                <img src="./react-logo.png" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
             </nav>
         </header>
     )
@@ -23,7 +30,7 @@ function Header() {
 function Footer() {
     return (
         <footer>
-            <small>© 2022 Jonathan GRATIGNY development. All rights reserved.</small>
+            <small>© 2022 JG development. All rights reserved.</small>
         </footer>
     )
 }

@@ -446,87 +446,7 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-/**
-Challenge: 
-
-- Add an `ul` inside the Header's `nav` and create
-  the following `li`s: "Pricing", "About", & "Contact"
-- Using flexbox, line up the nav items horizontally, and
-  put them inline with the React logo.
-- Change the image styling to happen in CSS instead of in-line
-  For practice, add a new class to the image in order to style it
-*/
-
-function Header() {
-    return _react2.default.createElement(
-        "header",
-        null,
-        _react2.default.createElement(
-            "nav",
-            { className: "nav" },
-            _react2.default.createElement("img", { src: "./react-logo.png", className: "nav-logo" }),
-            _react2.default.createElement(
-                "ul",
-                { className: "nav-items" },
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Pricing"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "About"
-                ),
-                _react2.default.createElement(
-                    "li",
-                    null,
-                    "Contact"
-                )
-            )
-        )
-    );
-}
-
-function Footer() {
-    return _react2.default.createElement(
-        "footer",
-        null,
-        _react2.default.createElement(
-            "small",
-            null,
-            "\xA9 2022 JG development. All rights reserved."
-        )
-    );
-}
-
-function MainContent() {
-    return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement(
-            "h1",
-            null,
-            "Reasons I'm excited to learn React"
-        ),
-        _react2.default.createElement(
-            "ol",
-            null,
-            _react2.default.createElement(
-                "li",
-                null,
-                "It's a popular library, so I'll be able to fit in with the cool kids!"
-            ),
-            _react2.default.createElement(
-                "li",
-                null,
-                "I'm more likely to get a job as a developer if I know React"
-            )
-        )
-    );
-}
-
-function Page() {
+function App() {
     return _react2.default.createElement(
         "div",
         null,
@@ -536,7 +456,7 @@ function Page() {
     );
 }
 
-_reactDom2.default.render(_react2.default.createElement(Page, null), document.getElementById("root"));
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById("root"));
 
 /***/ }),
 /* 6 */

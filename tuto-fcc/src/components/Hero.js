@@ -1,12 +1,11 @@
 import React from "react";
-import photoGrid from "../images/photo-grid.png";
 
 export default function Hero() {
     return (
         <section className="hero">
             <img 
             className="hero--photo"
-            src={photoGrid} 
+            src={`./images/photo-grid.png`}
             alt="gridPhoto" 
             />
             <h1 className="hero--header">Online Experiences</h1>
